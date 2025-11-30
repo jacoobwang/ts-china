@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./source/ea0d7.css" media="all">
   <link rel="stylesheet" href="./source/3314e.css" media="all">
   <script src="./source/62b3e.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body
   class="home page-template page-template-full_width page-template-full_width-php page page-id-7 theme-bridge bridge-core-2.0.7 woocommerce-js qi-addons-for-elementor-1.0  qode-title-hidden qode_grid_1300 side_menu_slide_from_right footer_responsive_adv hide_top_bar_on_mobile_header columns-3 qode-theme-ver-19.4 qode-theme-bridge elementor-default elementor-page elementor-page-7 qode-chrome">
@@ -66,7 +68,7 @@
                         <div class="icon_text_holder">
                           <div class="icon_text_inner">
                             <h1 class="icon_title"></h1>
-                            <p style="color: #ffffff">18613167702</p>
+                            <p style="color: #ffffff">13925120412</p>
                           </div>
                         </div>
                       </div>
@@ -98,9 +100,50 @@
       </div>
 
       <div class="content content_top_margin_none" style="min-height: 179px; padding-top: 0px;">
-        <div class="content_inner  ">
+        <div class="content_inner">
           <div class="full_width">
             <div class="full_width_inner">
+              <style>
+                .home-swiper{width:100vw;height:420px;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);--swiper-theme-color:#fff;--swiper-pagination-color:#fff}
+                .home-swiper .swiper-slide img{width:100%;height:100%;object-fit:cover}
+                @media (max-width:1200px){.home-swiper{height:420px}}
+                @media (max-width:992px){.home-swiper{height:420px}}
+                @media (max-width:768px){.home-swiper{height:320px}}
+                @media (max-width:480px){.home-swiper{height:250px}}
+              </style>
+              <style>
+                @media (max-width:768px){
+                  header.page_header{position:static !important}
+                  .header_bottom .logo_wrapper,.header_bottom .q_logo{position:static !important}
+                }
+              </style>
+              <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./banner/01.jpg" alt="" loading="lazy"></div>
+                  <div class="swiper-slide"><img src="./banner/02.jpg" alt="" loading="lazy"></div>
+                  <div class="swiper-slide"><img src="./banner/03.jpg" alt="" loading="lazy"></div>
+                  <div class="swiper-slide"><img src="./banner/04.jpg" alt="" loading="lazy"></div>
+                  <div class="swiper-slide"><img src="./banner/05.jpg" alt="" loading="lazy"></div>
+                  <div class="swiper-slide"><img src="./banner/06.jpg" alt="" loading="lazy"></div>
+                  <div class="swiper-slide"><img src="./banner/07.jpg" alt="" loading="lazy"></div>
+                  <div class="swiper-slide"><img src="./banner/08.jpg" alt="" loading="lazy"></div>
+                  <div class="swiper-slide"><img src="./banner/09.jpg" alt="" loading="lazy"></div>
+                  <div class="swiper-slide"><img src="./banner/10.jpg" alt="" loading="lazy"></div>
+                  <div class="swiper-slide"><img src="./banner/11.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <script>
+                (function(){
+                  if(!window.Swiper)return;
+                  new Swiper('.home-swiper',{
+                    loop:true,
+                    slidesPerView:1,
+                    autoplay:{delay:5000,disableOnInteraction:false},
+                    pagination:{el:'.home-swiper .swiper-pagination',clickable:true}
+                  });
+                })();
+              </script>
               <div data-elementor-type="wp-page" data-elementor-id="7" class="elementor elementor-7"
                 data-elementor-settings="[]">
                 <div class="elementor-inner">
